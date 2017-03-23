@@ -3,11 +3,8 @@ public class SpringSeason {
         int m = Integer.parseInt(args[0]);
         int d = Integer.parseInt(args[1]);
         
-        boolean isSpringSeason;
-        isSpringSeason = m >= 3 && m <= 6;
-        isSpringSeason = isSpringSeason && (m == 3 && d >= 20);
-        isSpringSeason = isSpringSeason && (m == 6 && d <= 20);
+        boolean isSpringSeason = (m == 3 && d >= 20) || (m == 4) || (m == 5) || (m == 6 && m <= 20);
         
-        System.out.println(isSpringSeason);
+        println(isSpringSeason);
     }
 }
